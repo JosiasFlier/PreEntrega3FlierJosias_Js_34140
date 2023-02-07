@@ -1,0 +1,130 @@
+/*NORMALIZADOR*/
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+/*Generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: auto;
+    background-color: #c9bcb8;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.paymentForm {
+    padding: 20px;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+p {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 0vw 2vw 0vw 2vw;
+}
+
+/*MENU NAVEGADOR*/
+#titleLogo {
+    background: linear-gradient(45deg, #324a51, #2a8b9f);
+    background-size: 400%;
+    animation: gradient 5s infinite;
+    padding: 10px 0 10px;
+    font-family: "Russo One", sans-serif;
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 3vw;
+    font-style: italic;
+    letter-spacing: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes gradient {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* titulo modo tableta - md */
+@media screen and (max-width: 991px) {
+    #titleLogo {
+        padding: 7px 0 7px;
+    }
+}
+
+/* titulo modo mobile - sm */
+@media screen and (max-width: 767px) {
+    #titleLogo {
+        height: 70px;
+        font-size: calc(0.5em + 3vw);
+        padding: 3px 0 3px;
+    }
+}
+
+/* INPUTS Y BOTONES */
+
+form input[type="text"], .form input[type="email"], .form select, .form textarea {
+  width: 30%;
+  height: 30px;
+  padding: 3px 10px;
+  font-size: 2rem;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block; }
+
+.btn {
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  background-color: #2a8b9f;
+  border-radius: 8px;
+  color: white; }
+
+.btn:hover {
+    background-color: #324a51;
+    font-size: 2rem black; }
+
+.btnPay {
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  background-color: #115525;
+  border-radius: 8px;
+  color: white; 
+}
+
+.btnPay:hover {
+  background-color: #1d8a3c;
+  color: black; 
+}
+
+/* CARRITO DE COMPRAS */
+
+.shoppingCart {
+    background-color: aqua;
+}

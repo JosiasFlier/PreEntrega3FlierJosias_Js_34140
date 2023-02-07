@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TODO PAGO</title>
+        <link rel="icon" href="./assets/images/icon.jpg" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header" >
+            <div id="titleLogo">
+                <h1>TODO PAGO</h1>
+            </div>
+        </header>    
+        <div class="paymentForm"> 
+            <form>
+                <label>Ingresa tu nombre de usuario:</label>
+                <br/><br/>
+                <input type="text" id="username" />
+                <br/><br/>
+                <button class="btn btnUser" type="button">Crear usuario</button>
+            </form>
+            <form style="display: none" id="balanceForm">
+                
+                <label>Bienvenido, <span id="greeting"></span></label>
+                <br/><br/>
+                <label>Ingresa la cantidad que deseas cargar a tu cuenta:</label>
+                <br/>
+                <input type="text" id="balance"/>
+                <br/>
+                <button class="btn btnBalance" type="button">Cargar saldo</button>
+                <br/><br/>
+            </form>
+            <p style="display: none" id="updatedBalance"></p>
+            <form style="display: none" id="servicesForm">
+                <hr>
+                <br/>
+                <h3>Selecciona un servicio:</h3>
+                <br/>
+                <div id="serviceFormList">
+                </div>
+                <br/>
+                <label>Ingresa la cantidad a pagar:</label><br />
+                <input type="text" id="amount" /><br /><br />
+                <p style="display: none" id="serviceMessage"></p>
+                <button class="btn btnService" type="button">Agregar Servicio</button>
+                <br/>
+                <hr>
+            </form>
+            <br/>
+            <div id="idShoppingCart">
+                <h3 style="display: none" id="cartTitle">Carrito de Servicios a Pagar</h3>
+                <br/>
+                <ul id="cart"></ul>
+            </div>
+            <button class="btnPay" style="display: none" id="payButton">Pagar</button>
+        </div>   
+            <p style="display: none" id="finalMessage"></p>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
