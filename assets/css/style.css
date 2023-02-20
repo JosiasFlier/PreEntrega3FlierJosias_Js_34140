@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+
 /*Generales*/
 * {
     margin: 0;
@@ -39,7 +40,96 @@ p {
     padding: 0vw 2vw 0vw 2vw;
 }
 
-/*MENU NAVEGADOR*/
+label {
+    font-size: 2rem;
+}
+
+.h1 {
+    font-family: "Russo One", sans-serif;
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 4vw;
+    font-style: italic;
+    letter-spacing: 0.5vw;
+}
+
+.form-control {
+    font-size: 1.7rem;
+}
+
+/* INDEX - INGRESO DE USUARIO Y DEPOSITO */
+
+/* Estilos para el formulario */
+
+.conteiner {
+    height: 90vh;
+}
+
+#saludo,
+#saludo2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#bienvenido {
+    font-family: "Russo One", sans-serif;
+    color: #f4f4f4;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 7rem;
+    font-style: italic;
+    letter-spacing: 0.2vw;
+}
+
+.formulariosIngreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#crearUsuario,
+#ingresarDinero {
+    background-color: #f4f4f498;
+    /* tus estilos para el formulario */
+    width: 50%;
+    min-height: 40%;
+    border: 1px solid #615f5f;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+#ingresarDinero {
+    display: none;
+}
+
+#bodyIndex {
+    background: linear-gradient(45deg, #324a51, #2a8b9f);
+    background-size: 400%;
+    animation: gradient 5s infinite;
+    height: 95vh;
+}
+@keyframes gradient {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.tarjetaDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*SERVICIOS*/
+
+
+
 #titleLogo {
     background: linear-gradient(45deg, #324a51, #2a8b9f);
     background-size: 400%;
@@ -48,13 +138,30 @@ p {
     font-family: "Russo One", sans-serif;
     color: #f4f4f4;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4rem;
     font-style: italic;
     letter-spacing: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+#datosUsuario {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    font-size: 2vw;
+    border-radius: 10px;
+    border: solid 1px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+#datosUsuario p {
+    font-weight: bold;
+    text-align: center;
+} 
 
 @keyframes gradient {
     0%,
@@ -66,61 +173,49 @@ p {
     }
 }
 
-/* titulo modo tableta - md */
-@media screen and (max-width: 991px) {
-    #titleLogo {
-        padding: 7px 0 7px;
-    }
+.formTitle, .formSubtitle {
+    text-align: center;
 }
 
-/* titulo modo mobile - sm */
-@media screen and (max-width: 767px) {
-    #titleLogo {
-        height: 70px;
-        font-size: calc(0.5em + 3vw);
-        padding: 3px 0 3px;
-    }
+.formTitle {
+    background-color: #2a8b9f;
+    font-weight: bold;
+
 }
 
 /* INPUTS Y BOTONES */
 
-form input[type="text"], .form input[type="email"], .form select, .form textarea {
-  width: 30%;
-  height: 30px;
-  padding: 3px 10px;
-  font-size: 2rem;
-  border-radius: 3px;
-  margin: 8px 0;
-  display: inline-block; }
-
 .btn {
-  width: 200px;
-  height: 40px;
-  font-size: 2rem;
-  padding: 8px 16px;
-  margin-top: 2rem;
-  background-color: #2a8b9f;
-  border-radius: 8px;
-  color: white; }
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 20px;
+    padding: 8px 16px;
+    margin-top: 2rem;
+    background-color: #2a8b9f;
+    border-radius: 8px;
+    color: white;
+}
 
 .btn:hover {
     background-color: #324a51;
-    font-size: 2rem black; }
+    font-size: 2rem black;
+}
 
 .btnPay {
-  width: 200px;
-  height: 40px;
-  font-size: 2rem;
-  padding: 8px 16px;
-  margin-top: 2rem;
-  background-color: #115525;
-  border-radius: 8px;
-  color: white; 
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    padding: 8px 16px;
+    margin-top: 2rem;
+    background-color: #115525;
+    border-radius: 8px;
+    color: white;
 }
 
 .btnPay:hover {
-  background-color: #1d8a3c;
-  color: black; 
+    background-color: #1d8a3c;
+    color: black;
 }
 
 /* CARRITO DE COMPRAS */

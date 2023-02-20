@@ -1,0 +1,9 @@
+{
+    "empresas": {
+        "agua": ["Aguas Argentinas", "Aguas del Norte", "Aguas Cordobesas"],
+        "gas": ["Litoral Gas", "Gas del Estado", "EcoGas"],
+        "internet": ["Claro", "Fibertel", "Personal"],
+        "electricidad": ["Edenor", "Edesur", "Epec"],
+        "telefono": ["Claro", "Movistar", "Personal"]
+    }
+}

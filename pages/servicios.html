@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TODO PAGO DOS</title>
+        <link rel="icon" href="./../assets/images/icon.jpg" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <link rel="stylesheet" href="./../assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div id="titleLogo">
+                <h1 class="h1">TODO PAGO </h1>
+            </div>
+        </header>
+        <div id="datosUsuario">
+            <div class="col-9">
+                <p id="usuario"></p>
+            </div>
+            <div class="col-3">
+                <p id="saldo"></p>
+            </div>
+        </div>
+        <div>
+            <P class="formSubtitle">
+                Seleccione el servicio, la empresa, el periodo y el monto a
+                abonar
+            </P>
+        </div>
+        <div class="paymentForm row h-100">
+            <div class="col-6 h-100">
+                <h2 class="formTitle">SERVICIOS A PAGAR</h2>
+                <form class="seleccionServicio">
+                    <div class="form-group">
+                        <label for="servicio">Servicio</label>
+                        <select class="form-control" id="servicio">
+                            <option value="" disabled selected>
+                                Seleccione un servicio
+                            </option>
+                            <option value="agua">Agua</option>
+                            <option value="gas">Gas</option>
+                            <option value="internet">Internet</option>
+                            <option value="electricidad">Electricidad</option>
+                            <option value="telefono">Teléfono</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <select class="form-control" id="empresa">
+                            <option value="" disabled selected>
+                                Primero seleccione el servicio
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="periodo">Periodo</label>
+                        <select class="form-control" id="periodo">
+                            <option value="" disabled selected>
+                                Seleccione el periodo
+                            </option>
+                            <option value="december22">Diciembre - 2022</option>
+                            <option value="january23">Enero - 2023</option>
+                            <option value="february23">Febrero - 2023</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="monto">Monto</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="monto"
+                            placeholder="Ingrese el monto"
+                        />
+                    </div>
+                    <button type="button" class="btn btn-primary" id="agregar">
+                        Agregar Servicio
+                    </button>
+                </form>
+            </div>
+            <div class="col-6 h-100">
+                <h2 class="formTitle">CARRITO DE PAGO</h2>
+                <table class="table h-100" id="carrito">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Empresa</th>
+                            <th>Periodo</th>
+                            <th>Monto</th>
+                            <th class="acciones"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button type="button" class="btn btn-primary" id="pagar">
+                    Pagar
+                </button>
+            </div>
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./../js/services.js"></script>
+    </body>
+</html>
